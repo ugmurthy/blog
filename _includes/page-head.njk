@@ -1,0 +1,25 @@
+<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading bg-light">
+        <h1>{{ title }}</h1>
+        <p>
+        <span style="background-image: url('/img/home-bg.jpg');"></span>
+        </p>
+        {#
+        {% if author %}
+          <h1>{{ title }}</h1>
+          <h2 class="subheading">{{ description }}</h2>
+          <p class="meta">Posted by <span style="background-image: url('/img/home-bg.jpg'');"></span> {{ author }} on {{ date | formatDate }}.</span></p>
+        {% else %}
+          
+          <h2 class="subheading">{{ description }}</h2>
+        {% endif %}
+        #}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

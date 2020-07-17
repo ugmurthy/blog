@@ -1,0 +1,28 @@
+---
+title: To be decided
+subtitle: Nil
+author: unknown
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title }} </title>
+    </head>
+    <body>
+        <HR>
+        Collections :
+        {% for post in collections.posts %}
+            <li> <a href="{{ post.url | url }}"> {{post.data.title}} by {{post.data.author}} </a> </li>
+        {% endfor %}
+        <HR>
+        Collections.dump:
+        {% collections.posts | dump %}
+        <HR>
+        {{ content | safe }}
+        
+    </body>
+</head>
+</html>

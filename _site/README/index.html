@@ -1,0 +1,35 @@
+<h2>READ ME</h2>
+<h3>TOC</h3>
+<ol>
+<li>Getting started with 11ty</li>
+<li>Quick check</li>
+<li>Working with Templates</li>
+<li>Using Data</li>
+<li>Configuration</li>
+<li>Template languages</li>
+</ol>
+<h3>1. Getting started with 11ty</h3>
+<p>install 11ty</p>
+<p>Installing Eleventy into our project requires package.json
+Lets created it using <code>npm init</code></p>
+<p><code>~/myproject $ npm init -y</code></p>
+<p>the <code>-y</code> makes npm use all defaults</p>
+<p>Install Eleventy into pacakge.json</p>
+<p><code>~/myproject $ npm install --save-dev @11ty/eleventy</code>
+<br>
+or
+<br>
+<code>~/myproject $ npm install -g @11ty/eleventy</code></p>
+<h3>2. Quick Check</h3>
+<p>To run Eleventy
+<br>
+<code>~/myproject $ npx @11ty/eleventy</code> <br>
+<code>Processed 0 files in 0.03 seconds (V0.11.0)</code><br></p>
+<h3>3. Working with templates</h3>
+<p>Template files (*.md in this case) reside in <code>posts</code> and layout files <code>*.njk</code> reside in <code>_includes</code></p>
+<p>The front matter data in the template is merged with the front matter date in the layout. The front matter data in template take priority over that in layouts - the closer to content, the higher priority the data.</p>
+<p>Note: Having a json file in the a directory with the name same as the directory allows one to share the same layout.</p>
+<p><code>{     &quot;layout&quot;: &quot;mylayout.njk&quot;,     &quot;tags&quot;: [&quot;posts&quot;]  }</code></p>
+<p>and makes avaialbe the data relating to files (templates) in <code>posts</code> as a collection referred by <code>collections.posts</code></p>
+<h3>4. Using data</h3>
+<p>The layout file uses the <code>collections.posts</code></p>
