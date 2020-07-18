@@ -1,0 +1,25 @@
+<div class="col-lg-8 col-md-10 mx-auto pt-3">        
+    <div class="card">
+        <div class="card-header">
+            <h2>{{title}}</h2>
+        </div>
+        {% if image %}
+        <div>
+            <img class="card-img-top" src="{{ image }}"  style="width:100%">
+            <div class="text-center">
+                <a href="{{ attribution }}" class="text-muted small"> Image by {{ imageby }}</a>
+            </div>
+        </div>
+        {% else %}
+            {# TODO
+            could place default image here 
+            look for creative ways to create an image or select one of many 
+            stock images
+            #}
+        {% endif %}
+        <div class="card-body">
+            <p class="card-text">{{content | safe}}</p>
+        </div> 
+        <div class="card-footer text-small text-muted">{{author}}</div>
+    </div>
+</div>

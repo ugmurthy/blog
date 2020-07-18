@@ -1,35 +1,225 @@
-<h2>READ ME</h2>
-<h3>TOC</h3>
-<ol>
-<li>Getting started with 11ty</li>
-<li>Quick check</li>
-<li>Working with Templates</li>
-<li>Using Data</li>
-<li>Configuration</li>
-<li>Template languages</li>
-</ol>
-<h3>1. Getting started with 11ty</h3>
-<p>install 11ty</p>
-<p>Installing Eleventy into our project requires package.json
-Lets created it using <code>npm init</code></p>
-<p><code>~/myproject $ npm init -y</code></p>
-<p>the <code>-y</code> makes npm use all defaults</p>
-<p>Install Eleventy into pacakge.json</p>
-<p><code>~/myproject $ npm install --save-dev @11ty/eleventy</code>
-<br>
-or
-<br>
-<code>~/myproject $ npm install -g @11ty/eleventy</code></p>
-<h3>2. Quick Check</h3>
-<p>To run Eleventy
-<br>
-<code>~/myproject $ npx @11ty/eleventy</code> <br>
-<code>Processed 0 files in 0.03 seconds (V0.11.0)</code><br></p>
-<h3>3. Working with templates</h3>
-<p>Template files (*.md in this case) reside in <code>posts</code> and layout files <code>*.njk</code> reside in <code>_includes</code></p>
-<p>The front matter data in the template is merged with the front matter date in the layout. The front matter data in template take priority over that in layouts - the closer to content, the higher priority the data.</p>
-<p>Note: Having a json file in the a directory with the name same as the directory allows one to share the same layout.</p>
-<p><code>{     &quot;layout&quot;: &quot;mylayout.njk&quot;,     &quot;tags&quot;: [&quot;posts&quot;]  }</code></p>
-<p>and makes avaialbe the data relating to files (templates) in <code>posts</code> as a collection referred by <code>collections.posts</code></p>
-<h3>4. Using data</h3>
-<p>The layout file uses the <code>collections.posts</code></p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>About</title>
+
+<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="mainNav">
+  <div class="container">
+    
+      <a class="navbar-brand text-disabled" href="/index.html">My Blog</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/README">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-disabled" href="/contact">Contact</a>
+          </li>
+        </ul>
+      
+        <form class="form-inline mt-2 mt-md-0" id="searchbox">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    
+  </div>
+</nav>
+
+
+  
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-2">
+      <div class="pt-3">Recent Blogs</div>
+      
+        <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+          <div class="text-info small line-height:1.1"> What is Lorem Ipsum?</div>
+        </a>
+        <p class="text-muted small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of typ 
+          <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                ...
+          </a>
+        </p>
+      
+        <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+          <div class="text-info small line-height:1.1"> Why do we use it?</div>
+        </a>
+        <p class="text-muted small"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal dist 
+          <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                ...
+          </a>
+        </p>
+      
+        <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+          <div class="text-info small line-height:1.1"> Where can I get some?</div>
+        </a>
+        <p class="text-muted small"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believ 
+          <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+          </a>
+        </p>
+      
+        <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+          <div class="text-info small line-height:1.1"> Where does it come from?</div>
+        </a>
+        <p class="text-muted small"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin profe 
+          <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+          </a>
+        </p>
+      
+        <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+          <div class="text-info small line-height:1.1"> हम इसे क्यों प्रयोग करते हैं?</div>
+        </a>
+        <p class="text-muted small"> यह एक लंबा स्थापित तथ्य है कि जब एक पाठक एक पृष्ठ के खाखे को देखेगा तो पठनीय सामग्री से विचलित हो जाएगा. Lorem Ipsum का उपयोग करने का मुद्दा यह है कि इसमें एक और अधिक या कम अक्षरों का सामान्य वितरण 
+          <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+          </a>
+        </p>
+      
+      </div>
+      
+      <div class="col-lg-8 col-md-10 mx-auto">        
+        
+           
+           <div class="bg-light p-2">
+              <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                <h5 class="text-info"> What is Lorem Ipsum?</h5>
+              </a>
+              <p class="text-muted"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of typ 
+                <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                ...
+                </a>
+              </p>
+           </div>
+        
+           
+           <div class="bg-light p-2">
+              <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                <h5 class="text-info"> Why do we use it?</h5>
+              </a>
+              <p class="text-muted"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal dist 
+                <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
+                ...
+                </a>
+              </p>
+           </div>
+        
+           
+           <div class="bg-light p-2">
+              <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                <h5 class="text-info"> Where can I get some?</h5>
+              </a>
+              <p class="text-muted"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believ 
+                <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+                </a>
+              </p>
+           </div>
+        
+           
+           <div class="bg-light p-2">
+              <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                <h5 class="text-info"> Where does it come from?</h5>
+              </a>
+              <p class="text-muted"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin profe 
+                <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+                </a>
+              </p>
+           </div>
+        
+           
+           <div class="bg-light p-2">
+              <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                <h5 class="text-info"> हम इसे क्यों प्रयोग करते हैं?</h5>
+              </a>
+              <p class="text-muted"> यह एक लंबा स्थापित तथ्य है कि जब एक पाठक एक पृष्ठ के खाखे को देखेगा तो पठनीय सामग्री से विचलित हो जाएगा. Lorem Ipsum का उपयोग करने का मुद्दा यह है कि इसमें एक और अधिक या कम अक्षरों का सामान्य वितरण 
+                <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
+                ...
+                </a>
+              </p>
+           </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/murthyug">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/ugmurthy">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="center">
+        <p class="copyright text-muted"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/clean-blog.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+  const copyright = $('.copyright');
+  copyright.text(`Copyright, U G Murthy ${new Date().getFullYear()}`);
+</script>
+
+</body>
+
+</html>
