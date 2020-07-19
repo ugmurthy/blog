@@ -1,6 +1,7 @@
 ---
 title: Where does it come from?
 author: ugurthy@lorem.com
+description: Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC
 datepublished: 15-Jan-2020
 keywords: ["Markdown","blog","11ty","frontmatter"]
 ---

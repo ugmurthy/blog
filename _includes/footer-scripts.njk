@@ -43,3 +43,14 @@ $(document).ready(function(){
   const copyright = $('.copyright');
   copyright.text(`Copyright, U G Murthy ${new Date().getFullYear()}`);
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#searchbox").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".bloglist").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>

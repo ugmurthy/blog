@@ -1,6 +1,7 @@
 ---
 title: Where can I get some?
 author: ugurthy@lorem.com
+description: There are many Lorem Ipsum generators on the Internet. Chose with care.
 datepublished: 13-Jan-2020
 keywords: ["Markdown","blog","11ty","frontmatter"]
 ---

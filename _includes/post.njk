@@ -6,9 +6,10 @@
         {% if image %}
         <div>
             <img class="card-img-top" src="{{ image }}"  style="width:100%">
-            <div class="text-center">
-                <a href="{{ attribution }}" class="text-muted small"> Image by {{ imageby }}</a>
+            <div class="text-center font-weight-light small">
+                <a href="{{ attribution }}" class="text-muted"> Image by {{ imageby }}</a>
             </div>
+            
         </div>
         {% else %}
             {# TODO
@@ -18,7 +19,12 @@
             #}
         {% endif %}
         <div class="card-body">
-            <p class="card-text">{{content | safe}}</p>
+            {% if description %}
+                <div class="font-weight-lighter font-italic text-center">
+                {{ description }}
+                </div>
+            {% endif%}
+            <p class="card-text font-weight-light">{{content | safe}}</p>
         </div> 
         <div class="card-footer text-small text-muted">{{author}}</div>
     </div>
