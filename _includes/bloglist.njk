@@ -8,14 +8,14 @@
           <div class="text-info small line-height:1.1"> {{post.data.title}}</div>
         </a>
        
-        {% if showkeywords %} 
+        {% if site.showkeywords %} 
           <div class="small font-weight-lighter"> {{ post.data.keywords }} </div>
         {%else%}
           <div style="display:none" class="small"> {{ post.data.keywords }} </div>
         {%endif%}
       
     <div style="display:none">{{post.data.content}} </div>
-    <p class="text-muted small"> {{ post.data.content | summary }} 
+    <p class="text-muted small"> {{ post.data.content | summary( 80 ) }} 
       <a href="{{ post.url | url }}" data-toggle="tooltip" title="by: {{post.data.author}}"> 
             ...
       </a>

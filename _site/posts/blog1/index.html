@@ -16,6 +16,8 @@
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/default.min.css">
+
 
 </head>
 
@@ -34,7 +36,7 @@
             <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/README">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-disabled" href="/contact">Contact</a>
@@ -108,7 +110,7 @@
           <div class="small font-weight-lighter"> Markdown,bootstrap,code </div>
         
       
-    <div style="display:none">&lt;pre class=&quot;alert alert-primary&quot;&gt;
+    <div style="display:none">&lt;pre class=&quot;alert alert-primary language-&quot;&gt;
     
     $ mkdir blog
     $ cd blog
@@ -119,12 +121,53 @@
     
     
 &lt;/pre&gt;
- </div>
-    <p class="text-muted small"> re class=&quot;alert alert-primary&quot;&gt;
+ &lt;pre &gt; 
+    &lt;code class=&quot;language-js hljs javascript&quot;&gt;
+    // This is a comment
+    // users.js
+    //
+    module.exports = {
+    getName: () =&gt; {
+        return &#39;Jimmy&#39;;
+    },
+    getLocation: () =&gt; {
+        return &#39;Madivalla&#39;;
+    },
+    dob: &#39;12-Jan-1920&#39;,
+    // added on 21/Jul
+    };
+
+    var x = 10;
+    x = x * 200;
+
+    co = require(&#39;users.js&#39;)
+    if ( condition ) {
+        return 1;
+    } else {
+        return 0;
+    }
+    &lt;/code&gt;
+&lt;/pre&gt;
+&lt;pre &gt; 
+    &lt;code class=&quot;language-html&quot;&gt;
+        &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;/index.html&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;/README&quot;&gt;About&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-disabled&quot; href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/code&gt;
+&lt;/pre&gt; </div>
+    <p class="text-muted small"> re class=&quot;alert alert-primary language-&quot;&gt;
     
     $ mkdir blog
     $ cd blog
-    $ node 
+ 
       <a href="/posts/bootstrap2/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
             ...
       </a>
@@ -146,6 +189,7 @@
 &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
 &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
 &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Tiger : for testing search&lt;/p&gt;
  </div>
     <p class="text-muted small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lo 
       <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
@@ -254,6 +298,7 @@
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>Tiger : for testing search</p>
 </p>
         </div> 
         <div class="card-footer text-small text-muted">ipsum@lorem.com</div>
@@ -300,6 +345,9 @@
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/js/clean-blog.min.js"></script>
 
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
@@ -321,6 +369,8 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
 
 </body>
 

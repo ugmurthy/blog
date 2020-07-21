@@ -1,5 +1,4 @@
 {
     "layout": "base.njk",
-    "tags": ["posts"],
-    "showkeywords": 1 
+    "tags": ["posts"]
 }

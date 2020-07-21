@@ -11,11 +11,11 @@ module.exports = function(eleventyConfig) {
     return util.inspect(obj);
   });
 
-  eleventyConfig.addFilter('summary', str => {
-    //const shortwriteup = "this is the short version of the blog spread over many lines this is the short version of the blog spread over many lines this is the short version of the blog spread over many lines"
-    return str.slice(str.indexOf("<p>")+3,80);
-  });
 
+  eleventyConfig.addFilter('summary', (str,len) => {
+    console.log("SUMMARY LEN :",len)
+    return str.slice(str.indexOf("<p>")+3,len);
+  }); 
 
   eleventyConfig.addFilter('formatDate', value => {
     const ISOcode = 'en-GB';
