@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('summary', str => {
     //const shortwriteup = "this is the short version of the blog spread over many lines this is the short version of the blog spread over many lines this is the short version of the blog spread over many lines"
-    return str.slice(str.indexOf("<p>")+3,200);
+    return str.slice(str.indexOf("<p>")+3,80);
   });
 
 
