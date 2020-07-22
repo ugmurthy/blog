@@ -17,77 +17,44 @@ netlify.com will build (using @11ty) and deploy the blogsite.
 - search blog content (left navigator shows resulting posts )
 
 **For future**
-- comments feature (ideas welcome)
+- comments feature (using disqus or other) (ideas welcome)
 - improve code block highlighting (any ideas welcome)
 
 
-##### 2. I just want use this blog template
-1. Fork or clone a copy of this repo to your github account
-2. Signup with www.netlify.com using your github account
-3. Build this repo using netlify.com (when you signup - netlify.com will guide you - chose defaults and you are done)
+##### 2. How to use this blog template
+
+1. Fork  a copy of this repo to your github account and clone to your local machine
+2. Install and build locally
+   <pre><code class="language-bash hljs"> 
+   $ cd ~/blosite # change directory to you blogsite
+   $ npm install
+   $ npx @11ty/eleventy --serve
+   # Browse locally to check if you can access the blogsite
+   # check the search function too.
+   </code></pre>
+
+3. Signup with www.netlify.com using your github account
+4. Build this repo using netlify.com (when you signup - netlify.com will guide you - chose defaults and you are done)
 
 
-
-##### 3. Installing @11ty
-1. Getting started with 11ty
-2. Quick check
-3. Working with Templates
+If the first 4 steps were sucessfull i.e. you are able to see your site on netlify then proceed with customisation
 
 
-###### 3.1 Getting started with 11ty
-
-Installing Eleventy into our project requires package.json
-Lets created it using `npm init`
-
-<pre><code class="language- hljs">
-# assumes you have alread installed node
-~/myproject $ npm init -y
-# the `-y` makes npm use all defaults
-
-# now Install Eleventy into pacakge.json
-~/myproject $ npm install --save-dev @11ty/eleventy
-
-# or 
-# if you want to intall Eleventy globally
-~/myproject $ npm install -g @11ty/eleventy
-
-</pre></code>
-
-###### 3.2 Quick Check
-
-To run Eleventy
-<pre><code class="language- hljs">
-# build (actually there are no files to build)
-~/myproject $ npx @11ty/eleventy
-Processed 0 files in 0.03 seconds (V0.11.0)
-</pre></code>
-
-###### 3.3 Working with templates
-
-Template files (*.md in this case) reside in `~/myproject/posts` and layout files `*.njk` reside in `~/myproject/_includes`
-
-The front matter data in the template is merged with the front matter date in the layout. The front matter data in template take priority over that in layouts - the closer to content, the higher priority the data.
-
-Note: Having a json file in the a directory with the name same as the directory allows one to share the same layout.
+4. Customise it by modifying contents of `_data/site.js`
+5. Modify index.njk, about.njk as needed
+6. Write you posts in markdown. All posts will reside ins `posts`
+7. Ensure you update variables in frontmatter especially `date` to date of posting (as YYYY-MM-DD )else it defaults to file creation date which will keep changing to build date and thus not preserving order of the blogs in left navigator.
+8. git commit the changes if any and push it to origin
+9. netlify.com will automatically build the external blogsite.
 
 
-<pre><code class="language- hljs">
-{
-    "layout": "mylayout.njk",
-    "tags": ["posts"] 
-}
-</pre></code>
+##### 3. References
 
-and makes avaialbe the data relating to files (templates) in `posts` as a collection referred by `collections.posts`
-
- ###### 4. Using data
-
-The layout file uses the `collections.posts` and one can loop over the collections.
-
-Site wide data can be kept in `~myprojec/_data/mysite.js` using `module.exports`
-
-[More info on 11ty](https://www.11ty.dev/)
-
-
+1. [@11ty](https://www.11ty.dev/)
+2. [Ian Feather account of moving from jekyll to 11ty](https://www.ianfeather.co.uk/moving-this-blog-from-jekyll-to-11ty/)
+3. [Paul Robert Lloyd experience moving from jekyll to 11ty](https://24ways.org/2018/turn-jekyll-up-to-eleventy/)
+4. [Highlighting code](https://highlightjs.org/)
+5. [starter code for this blogsite template](https://github.com/fullstacktraining/11ty-blog-jamstack-training/tree/module-1)
+6. [Create a blog using Jamstack](https://jamstack.training/courses/enrolled/693067)
 
 

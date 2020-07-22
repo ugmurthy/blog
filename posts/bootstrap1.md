@@ -2,7 +2,7 @@
 title: bootstrap classes in a markdown file?
 author: ugurthy@lorem.com
 description: Adding html that recognises bootstrap classes - an example
-date: 2020-11-20
+date: 2020-07-19
 keywords: ["Markdown","bootstrap","card","Example"]
 ---
 

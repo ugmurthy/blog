@@ -2,11 +2,14 @@
 title: Code block in a markdown file?
 author: ugurthy@lorem.com
 description: Adding a code block using bootstrap class
-date: 2020-10-14
+date: 2020-07-20
 keywords: ["Markdown","bootstrap","code","Example"]
 ---
 
-<pre class="alert alert-primary language-">
+Not very happy with the styling of code but better than plain text. 
+Something to workon in the future.
+
+<div> <pre><code class="language-bash hljs" style="zenburn">
     
     $ mkdir blog
     $ cd blog
@@ -15,12 +18,10 @@ keywords: ["Markdown","bootstrap","code","Example"]
     $ git init
     $ echo # README > README.md
     
-    
-</pre>
+</code></pre></div>
  
 
- <pre > 
-    <code class="language-js hljs javascript">
+ <div><pre ><code class="language-js hljs javascript" style="zenburn">
     // This is a comment
     // users.js
     //
@@ -45,21 +46,6 @@ keywords: ["Markdown","bootstrap","code","Example"]
 
         return 0;
     }
-    </code>
-</pre>
+</code></pre></div>
 
-<pre > 
-    <code class="language-html">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/README">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-disabled" href="/contact">Contact</a>
-          </li>
-        </ul>
-    </code>
-</pre>
+
