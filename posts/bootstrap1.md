@@ -2,8 +2,8 @@
 title: bootstrap classes in a markdown file?
 author: ugurthy@lorem.com
 description: Adding html that recognises bootstrap classes - an example
-datepublished: 15-Jan-2020
-keywords: ["Markdown","bootstrap","card"]
+date: 2020-11-20
+keywords: ["Markdown","bootstrap","card","Example"]
 ---
 
 <div class="container">

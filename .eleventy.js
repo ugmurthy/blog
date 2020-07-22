@@ -13,9 +13,23 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addFilter('summary', (str,len) => {
-    console.log("SUMMARY LEN :",len)
+    //console.log("SUMMARY LEN :",len)
     return str.slice(str.indexOf("<p>")+3,len);
   }); 
+
+
+  // https://24ways.org/2018/turn-jekyll-up-to-eleventy/
+  eleventyConfig.addCollection('sortedCollection', collection => {
+    
+    return collection.getFilteredByTag('posts').sort((a, b) => {
+      //console.log("Collection: ",collection)  
+      return a.date - b.date;
+    });
+  });
+
+  eleventyConfig.addCollection("sidebarFewer", (collection) => {
+    return collection.getFilteredByTag("posts").slice(-5);
+  });
 
   eleventyConfig.addFilter('formatDate', value => {
     const ISOcode = 'en-GB';

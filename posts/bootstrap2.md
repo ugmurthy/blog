@@ -2,8 +2,8 @@
 title: Code block in a markdown file?
 author: ugurthy@lorem.com
 description: Adding a code block using bootstrap class
-datepublished: 15-Jan-2020
-keywords: ["Markdown","bootstrap","code"]
+date: 2020-10-14
+keywords: ["Markdown","bootstrap","code","Example"]
 ---
 
 <pre class="alert alert-primary language-">
@@ -42,6 +42,7 @@ keywords: ["Markdown","bootstrap","code"]
     if ( condition ) {
         return 1;
     } else {
+
         return 0;
     }
     </code>

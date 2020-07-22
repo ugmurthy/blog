@@ -1,0 +1,25 @@
+<div class="col-lg-4 col-md-2">
+  <div class="pt-3">
+    Recent Blogs... 
+  </div>
+    {% for post in collections.sortedCollection |reverse %}
+      <div class="bloglist">
+        <a href="{{ post.url | url }}" data-toggle="tooltip" title="by: {{post.data.author}}"> 
+          <div class="text-info small line-height:1.1"> {{post.data.title}} {{ post.date | formatDate }}</div>
+        </a>
+       
+        {% if site.showkeywords %} 
+          <div class="small font-weight-lighter"> {{ post.data.keywords }} </div>
+        {%else%}
+          <div style="display:none" class="small"> {{ post.data.keywords }} </div>
+        {%endif%}
+      
+    <div style="display:none">{{post.data.content}} </div>
+    <p class="text-muted small"> {{ post.data.content | safe | summary( 80 ) }} 
+      <a href="{{ post.url | url }}" data-toggle="tooltip" title="by: {{post.data.author}}"> 
+            ...
+      </a>
+    </p>
+    </div>
+    {% endfor %}
+</div>

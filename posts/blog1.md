@@ -2,8 +2,8 @@
 title: What is Lorem Ipsum?
 author: ipsum@lorem.com
 description: Lorem Ipsum is an industry standard for dummy text
-datepublished: 10-Jan-2020
-keywords: ["Markdown","blog","11ty","frontmatter"]
+date: 2020-06-14
+keywords: ["Lorem","blog","dummy","Ipsum"]
 image: /img/horse-5364073_640.jpg
 video:
 imageby: Ray Shrewsberry
