@@ -33,11 +33,12 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('formatDate', value => {
     const ISOcode = 'en-GB';
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const options = {  year: 'numeric', month: 'short', day: 'numeric' };
     const d = new Date(value);
     return `${d.toLocaleDateString(ISOcode, options)}`;
   })
 
+  
   eleventyConfig.addFilter('sanitise', value => {
     return value.split(' ').join('-').toLowerCase();
   })

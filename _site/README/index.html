@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>About</title>
+<title>README</title>
 
 <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -57,471 +57,349 @@
   <div class="container mt-5">
     <div class="row">
       
-      <div  class="col-lg-4 col-md-2 pt-3">
-        <div class="pt-3">
-          Recent Blogsssss
+      <div class="col-lg-4 col-md-2">
+  <div class="pt-3">
+    Recent Blogs... 
+  </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/bootstrap1/" data-toggle="tooltip" title="Posted on: Nov 20, 2020"> 
+          <div class="text-info small line-height:1.1"> bootstrap classes in a markdown file?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Markdown,bootstrap,card,Example </div>
+        
+      
+    <div style="display:none">&lt;div class=&quot;container&quot;&gt;
+  &lt;h2&gt;Card Image&lt;/h2&gt;
+  &lt;p&gt;Image at the top (card-img-top):&lt;/p&gt;
+  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
+    &lt;img class=&quot;card-img-top&quot; src=&quot;/img/FP.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h4 class=&quot;card-title&quot;&gt;Jean Doe&lt;/h4&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;p&gt;Image at the bottom (card-img-bottom):&lt;/p&gt;
+  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h4 class=&quot;card-title&quot;&gt;Jane Doe&lt;/h4&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. Jane Doe is an architect and engineer&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;img class=&quot;card-img-bottom&quot; src=&quot;/img/FY.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/bootstrap2/" data-toggle="tooltip" title="Posted on: Oct 14, 2020"> 
+          <div class="text-info small line-height:1.1"> Code block in a markdown file?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Markdown,bootstrap,code,Example </div>
+        
+      
+    <div style="display:none">&lt;pre class=&quot;alert alert-primary language-&quot;&gt;
+    
+    $ mkdir blog
+    $ cd blog
+    $ node init
+    $ npm install 11ty/@eleventy --save-dev
+    $ git init
+    $ echo # README &gt; README.md
+    
+    
+&lt;/pre&gt;
+ &lt;pre &gt; 
+    &lt;code class=&quot;language-js hljs javascript&quot;&gt;
+    // This is a comment
+    // users.js
+    //
+    module.exports = {
+    getName: () =&gt; {
+        return &#39;Jimmy&#39;;
+    },
+    getLocation: () =&gt; {
+        return &#39;Madivalla&#39;;
+    },
+    dob: &#39;12-Jan-1920&#39;,
+    // added on 21/Jul
+    };
+
+    var x = 10;
+    x = x * 200;
+
+    co = require(&#39;users.js&#39;)
+    if ( condition ) {
+        return 1;
+    } else {
+
+        return 0;
+    }
+    &lt;/code&gt;
+&lt;/pre&gt;
+&lt;pre &gt; 
+    &lt;code class=&quot;language-html&quot;&gt;
+        &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;/index.html&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;/README&quot;&gt;About&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link text-disabled&quot; href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/code&gt;
+&lt;/pre&gt; </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/11ty/" data-toggle="tooltip" title="Posted on: Jul 21, 2020"> 
+          <div class="text-info small line-height:1.1"> Some of the issues during dev?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 ,issues,11ty,frontmatter,filter,netlify-deploy </div>
+        
+      
+    <div style="display:none">&lt;ol&gt;
+&lt;li&gt;Some Nasty 11ty build errors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;An error indicating circular reference between files in main dir (eg contact.njk) and blog posts in blog directory could not be resolved and therefore rolled back to previous commit&lt;/li&gt;
+&lt;li&gt;going back to the previous commit required a bit of reading about git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;
+&lt;code&gt;
+ # Reset to previous commit
+ $ git reset --hard HEAD
+ # additional info - using HEAD~1 instead of HEAD will take 
+ # you back one previous commit
+ # The --hard ensure that working tree is as it was 
+ # after the targetted commit
+
+ # some addition stuff i learnt on the way
+ $ cat .git/HEAD
+ ref: refs/heads/master
+
+ $ cat .git/refs/heads/master
+ 2eb7fc1fba340db8f552755a201121fb63c5e0c7
+
+ $ git log -1
+ commit 2eb7fc1fba340db8f552755a201121fb63c5e0c7 (HEAD -&gt; master)
+ Author: X X Xurthy &lt;aaa@aaa.com&gt;
+ Date:   Tue Jul 21 12:51:44 2020 +0530
+
+ # Not that the two hashes are the same. indicating HEAD points to master branch
+
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Some pitfalls.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;I used &lt;code&gt;netlify.com&lt;/code&gt; to deploy the site. Netlify can be configured to pick up the repo from github.com&lt;/li&gt;
+&lt;li&gt;for some reason netlify build does not ignore &lt;code&gt;node_modules&lt;/code&gt; during the build process and this could end up in build error&lt;/li&gt;
+&lt;li&gt;11ty, while building locally ignores the &lt;code&gt;node_modules&lt;/code&gt; without any specific action on part of the developer&lt;/li&gt;
+&lt;li&gt;Fix: Add &lt;code&gt;node_modules&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Sources of data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;be sure to read &lt;a href=&quot;https://www.11ty.dev/docs/data/&quot;&gt;11ty Source of data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I wanted access to site wide access to some variables. The best place for that is a json file in &lt;code&gt;_data&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;variable &lt;code&gt;showkeywords&lt;/code&gt; is used to show keywords in the left column. One can switch it off by making the value zero&lt;/li&gt;
+&lt;/ul&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/blog4/" data-toggle="tooltip" title="Posted on: Jul 5, 2020"> 
+          <div class="text-info small line-height:1.1"> Where does it come from?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Lorem,blog,dummy,Ipsum </div>
+        
+      
+    <div style="display:none">&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;quot;de Finibus Bonorum et Malorum&amp;quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;quot;Lorem ipsum dolor sit amet..&amp;quot;, comes from a line in section 1.10.32.&lt;/p&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/blog3/" data-toggle="tooltip" title="Posted on: Jun 15, 2020"> 
+          <div class="text-info small line-height:1.1"> Where can I get some?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Lorem,blog,dummy,Ipsum </div>
+        
+      
+    <div style="display:none">&lt;p&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/blog1/" data-toggle="tooltip" title="Posted on: Jun 14, 2020"> 
+          <div class="text-info small line-height:1.1"> What is Lorem Ipsum?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Lorem,blog,dummy,Ipsum </div>
+        
+      
+    <div style="display:none">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+&lt;p&gt;Tiger : for testing search&lt;/p&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/blog2/" data-toggle="tooltip" title="Posted on: May 10, 2020"> 
+          <div class="text-info small line-height:1.1"> Why do we use it?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Lorem,blog,dummy,Ipsum </div>
+        
+      
+    <div style="display:none">&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &#39;lorem ipsum&#39; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
+ </div>
+    
+
+    </div>
+    
+      <div class="bloglist" >
+        <a href="/posts/blog5/" data-toggle="tooltip" title="Posted on: Jul 19, 2019"> 
+          <div class="text-info small line-height:1.1"> हम इसे क्यों प्रयोग करते हैं?</div>
+        </a>
+       
+         
+          <div class="small font-weight-lighter"> &#9492 Lorem,blog,dummy,Ipsum,Hindi </div>
+        
+      
+    <div style="display:none">&lt;p&gt;यह एक लंबा स्थापित तथ्य है कि जब एक पाठक एक पृष्ठ के खाखे को देखेगा तो पठनीय सामग्री से विचलित हो जाएगा. Lorem Ipsum का उपयोग करने का मुद्दा यह है कि इसमें एक और अधिक या कम अक्षरों का सामान्य वितरण किया गया है, &#39;Content here, content here&#39; प्रयोग करने की जगह इसे पठनीय English के रूप में प्रयोग किया जाये. अब कई डेस्कटॉप प्रकाशन संकुल और वेब पेज संपादक उनके डिफ़ॉल्ट मॉडल पाठ के रूप में Lorem Ipsum उपयोग करते हैं, और अब &amp;quot;Lorem Ipsum&amp;quot; के लिए खोज अपने शैशव में कई वेब साइटों को उजागर करती है. इसके विभिन्न संस्करणों का वर्षों में विकास हुआ है, कभी दुर्घटना से, तो कभी प्रयोजन पर (हास्य और लगाव डालने के लिए).&lt;/p&gt;
+ </div>
+    
+
+    </div>
+    
+</div>
+      
+      <div class="col-lg-8 col-md-10 mx-auto pt-3">        
+    <div class="card">
+        <div class="card-header">
+            <h2>README</h2>
+            
         </div>
         
-          <div class="bloglist">
-          <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-            <div class="text-info small line-height:1.1"> हम इसे क्यों प्रयोग करते हैं?</div>
-          </a>
-          <p class="text-muted small"> यह एक लंबा स्थापित तथ्य है कि जब एक पाठक एक पृष्ठ के खाखे को देखेगा तो पठनीय सामग्री से विचलित हो जाएगा. Lorem Ipsum का उपयोग करने का मुद्दा यह है कि इसमें एक और अधिक या कम अक्षरों का सामान्य वितरण किया गया है, &#39;Content here, content here&#39; प्रयोग करने की जगह इसे पठनीय English के रूप में प्रयोग किया जाये. अब कई डेस्कटॉप प्रकाशन संकुल और वेब पेज संपादक उनके डिफ़ॉल्ट मॉडल पाठ के रूप में Lorem Ipsum उपयोग करते हैं, और अब &amp;quot;Lorem Ipsum&amp;quot; के लिए खोज अपने शैशव में कई वेब साइटों को उजागर करती है. इसके विभिन्न संस्करणों का वर्षों में विकास हुआ है, कभी दुर्घटना से, तो कभी प्रयोजन पर (हास्य और लगाव डालने के लिए).&lt;/p&gt;
- 
-            <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
+            
         
-          <div class="bloglist">
-          <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-            <div class="text-info small line-height:1.1"> Why do we use it?</div>
-          </a>
-          <p class="text-muted small"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &#39;lorem ipsum&#39; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
- 
-            <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-            <div class="text-info small line-height:1.1"> What is Lorem Ipsum?</div>
-          </a>
-          <p class="text-muted small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Tiger : for testing search&lt;/p&gt;
- 
-            <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-            <div class="text-info small line-height:1.1"> Where can I get some?</div>
-          </a>
-          <p class="text-muted small"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;
- 
-            <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-            <div class="text-info small line-height:1.1"> Where does it come from?</div>
-          </a>
-          <p class="text-muted small"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;quot;de Finibus Bonorum et Malorum&amp;quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;quot;Lorem ipsum dolor sit amet..&amp;quot;, comes from a line in section 1.10.32.&lt;/p&gt;
- 
-            <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/11ty/" data-toggle="tooltip" title="by: @murthyug"> 
-            <div class="text-info small line-height:1.1"> Some of the issues during dev?</div>
-          </a>
-          <p class="text-muted small"> l&gt;
-&lt;li&gt;Some Nasty 11ty build errors&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;An error indicating circular reference between files in main dir (eg contact.njk) and blog posts in blog directory could not be resolved and therefore rolled back to previous commit&lt;/li&gt;
-&lt;li&gt;going back to the previous commit required a bit of reading about git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;
-&lt;code&gt;
- # Reset to previous commit
- $ git reset --hard HEAD
- # additional info - using HEAD~1 instead of HEAD will take 
- # you back one previous commit
- # The --hard ensure that working tree is as it was 
- # after the targetted commit
+        <div class="card-body">
+            
+            <p class="card-text font-weight-light"><h5>1. Introduction</h5>
+<p>This repo is a blogsite template for generating a static blogsite and deploying it using netlify.com. On every commit
+netlify.com will build (using @11ty) and deploy the blogsite.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Customisable blogsite ( <code>modify _data/site.js</code> )</li>
+<li>Two column site - left column acting as navigator to blog posts</li>
+<li>uses @11ty to build</li>
+<li>uses bootstrap 4 for styles</li>
+<li>uses highlightjs for code blocks</li>
+<li>blog posts are markdown files (see samples : <code>/posts/*.md</code> )</li>
+<li>search blog content (left navigator shows resulting posts )</li>
+</ul>
+<p><strong>For future</strong></p>
+<ul>
+<li>comments feature (ideas welcome)</li>
+<li>improve code block highlighting (any ideas welcome)</li>
+</ul>
+<h5>2. I just want use this blog template</h5>
+<ol>
+<li>Fork or clone a copy of this repo to your github account</li>
+<li>Signup with www.netlify.com using your github account</li>
+<li>Build this repo using netlify.com (when you signup - netlify.com will guide you - chose defaults and you are done)</li>
+</ol>
+<h5>3. Installing @11ty</h5>
+<ol>
+<li>Getting started with 11ty</li>
+<li>Quick check</li>
+<li>Working with Templates</li>
+</ol>
+<h6>3.1 Getting started with 11ty</h6>
+<p>Installing Eleventy into our project requires package.json
+Lets created it using <code>npm init</code></p>
+<pre><code class="language- hljs">
+# assumes you have alread installed node
+~/myproject $ npm init -y
+# the `-y` makes npm use all defaults
 
- # some addition stuff i learnt on the way
- $ cat .git/HEAD
- ref: refs/heads/master
+# now Install Eleventy into pacakge.json
+~/myproject $ npm install --save-dev @11ty/eleventy
 
- $ cat .git/refs/heads/master
- 2eb7fc1fba340db8f552755a201121fb63c5e0c7
+# or 
+# if you want to intall Eleventy globally
+~/myproject $ npm install -g @11ty/eleventy
 
- $ git log -1
- commit 2eb7fc1fba340db8f552755a201121fb63c5e0c7 (HEAD -&gt; master)
- Author: X X Xurthy &lt;aaa@aaa.com&gt;
- Date:   Tue Jul 21 12:51:44 2020 +0530
-
- # Not that the two hashes are the same. indicating HEAD points to master branch
-
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Some pitfalls.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;I used &lt;code&gt;netlify.com&lt;/code&gt; to deploy the site. Netlify can be configured to pick up the repo from github.com&lt;/li&gt;
-&lt;li&gt;for some reason netlify build does not ignore &lt;code&gt;node_modules&lt;/code&gt; during the build process and this could end up in build error&lt;/li&gt;
-&lt;li&gt;11ty, while building locally ignores the &lt;code&gt;node_modules&lt;/code&gt; without any specific action on part of the developer&lt;/li&gt;
-&lt;li&gt;Fix: Add &lt;code&gt;node_modules&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Sources of data.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;be sure to read &lt;a href=&quot;https://www.11ty.dev/docs/data/&quot;&gt;11ty Source of data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I wanted access to site wide access to some variables. The best place for that is a json file in &lt;code&gt;_data&lt;/code&gt; directory&lt;/li&gt;
-&lt;li&gt;variable &lt;code&gt;showkeywords&lt;/code&gt; is used to show keywords in the left column. One can switch it off by making the value zero&lt;/li&gt;
-&lt;/ul&gt;
- 
-            <a href="/posts/11ty/" data-toggle="tooltip" title="by: @murthyug"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/bootstrap2/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-            <div class="text-info small line-height:1.1"> Code block in a markdown file?</div>
-          </a>
-          <p class="text-muted small"> re class=&quot;alert alert-primary language-&quot;&gt;
-    
-    $ mkdir blog
-    $ cd blog
-    $ node init
-    $ npm install 11ty/@eleventy --save-dev
-    $ git init
-    $ echo # README &gt; README.md
-    
-    
-&lt;/pre&gt;
- &lt;pre &gt; 
-    &lt;code class=&quot;language-js hljs javascript&quot;&gt;
-    // This is a comment
-    // users.js
-    //
-    module.exports = {
-    getName: () =&gt; {
-        return &#39;Jimmy&#39;;
-    },
-    getLocation: () =&gt; {
-        return &#39;Madivalla&#39;;
-    },
-    dob: &#39;12-Jan-1920&#39;,
-    // added on 21/Jul
-    };
-
-    var x = 10;
-    x = x * 200;
-
-    co = require(&#39;users.js&#39;)
-    if ( condition ) {
-        return 1;
-    } else {
-
-        return 0;
-    }
-    &lt;/code&gt;
-&lt;/pre&gt;
-&lt;pre &gt; 
-    &lt;code class=&quot;language-html&quot;&gt;
-        &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;/index.html&quot;&gt;Home&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;/README&quot;&gt;About&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link text-disabled&quot; href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/code&gt;
-&lt;/pre&gt; 
-            <a href="/posts/bootstrap2/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-          <div class="bloglist">
-          <a href="/posts/bootstrap1/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-            <div class="text-info small line-height:1.1"> bootstrap classes in a markdown file?</div>
-          </a>
-          <p class="text-muted small"> Image at the top (card-img-top):&lt;/p&gt;
-  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
-    &lt;img class=&quot;card-img-top&quot; src=&quot;/img/FP.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
-    &lt;div class=&quot;card-body&quot;&gt;
-      &lt;h4 class=&quot;card-title&quot;&gt;Jean Doe&lt;/h4&gt;
-      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
-      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;br&gt;
-  &lt;p&gt;Image at the bottom (card-img-bottom):&lt;/p&gt;
-  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
-    &lt;div class=&quot;card-body&quot;&gt;
-      &lt;h4 class=&quot;card-title&quot;&gt;Jane Doe&lt;/h4&gt;
-      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. Jane Doe is an architect and engineer&lt;/p&gt;
-      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;img class=&quot;card-img-bottom&quot; src=&quot;/img/FY.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
- 
-            <a href="/posts/bootstrap1/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                  ...
-            </a>
-          </p>
-          </div>
-        
-      </div>
-      
-      <div class="col-lg-8 col-md-10 mx-auto">        
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                <h5 class="text-info"> हम इसे क्यों प्रयोग करते हैं?</h5>
-              </a>
-              <p class="text-muted"> यह एक लंबा स्थापित तथ्य है कि जब एक पाठक एक पृष्ठ के खाखे को देखेगा तो पठनीय सामग्री से विचलित हो जाएगा. Lorem Ipsum का उपयोग करने का मुद्दा यह है कि इसमें एक और अधिक या कम अक्षरों का सामान्य वितरण किया गया है, &#39;Content here, content here&#39; प्रयोग करने की जगह इसे पठनीय English के रूप में प्रयोग किया जाये. अब कई डेस्कटॉप प्रकाशन संकुल और वेब पेज संपादक उनके डिफ़ॉल्ट मॉडल पाठ के रूप में Lorem Ipsum उपयोग करते हैं, और अब &amp;quot;Lorem Ipsum&amp;quot; के लिए खोज अपने शैशव में कई वेब साइटों को उजागर करती है. इसके विभिन्न संस्करणों का वर्षों में विकास हुआ है, कभी दुर्घटना से, तो कभी प्रयोजन पर (हास्य और लगाव डालने के लिए).&lt;/p&gt;
- 
-                <a href="/posts/blog5/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                <h5 class="text-info"> Why do we use it?</h5>
-              </a>
-              <p class="text-muted"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &#39;lorem ipsum&#39; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
- 
-                <a href="/posts/blog2/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                <h5 class="text-info"> What is Lorem Ipsum?</h5>
-              </a>
-              <p class="text-muted"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-&lt;p&gt;Tiger : for testing search&lt;/p&gt;
- 
-                <a href="/posts/blog1/" data-toggle="tooltip" title="by: ipsum@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                <h5 class="text-info"> Where can I get some?</h5>
-              </a>
-              <p class="text-muted"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;
- 
-                <a href="/posts/blog3/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                <h5 class="text-info"> Where does it come from?</h5>
-              </a>
-              <p class="text-muted"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;quot;de Finibus Bonorum et Malorum&amp;quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;quot;Lorem ipsum dolor sit amet..&amp;quot;, comes from a line in section 1.10.32.&lt;/p&gt;
- 
-                <a href="/posts/blog4/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/11ty/" data-toggle="tooltip" title="by: @murthyug"> 
-                <h5 class="text-info"> Some of the issues during dev?</h5>
-              </a>
-              <p class="text-muted"> l&gt;
-&lt;li&gt;Some Nasty 11ty build errors&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;An error indicating circular reference between files in main dir (eg contact.njk) and blog posts in blog directory could not be resolved and therefore rolled back to previous commit&lt;/li&gt;
-&lt;li&gt;going back to the previous commit required a bit of reading about git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;
-&lt;code&gt;
- # Reset to previous commit
- $ git reset --hard HEAD
- # additional info - using HEAD~1 instead of HEAD will take 
- # you back one previous commit
- # The --hard ensure that working tree is as it was 
- # after the targetted commit
-
- # some addition stuff i learnt on the way
- $ cat .git/HEAD
- ref: refs/heads/master
-
- $ cat .git/refs/heads/master
- 2eb7fc1fba340db8f552755a201121fb63c5e0c7
-
- $ git log -1
- commit 2eb7fc1fba340db8f552755a201121fb63c5e0c7 (HEAD -&gt; master)
- Author: X X Xurthy &lt;aaa@aaa.com&gt;
- Date:   Tue Jul 21 12:51:44 2020 +0530
-
- # Not that the two hashes are the same. indicating HEAD points to master branch
-
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Some pitfalls.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;I used &lt;code&gt;netlify.com&lt;/code&gt; to deploy the site. Netlify can be configured to pick up the repo from github.com&lt;/li&gt;
-&lt;li&gt;for some reason netlify build does not ignore &lt;code&gt;node_modules&lt;/code&gt; during the build process and this could end up in build error&lt;/li&gt;
-&lt;li&gt;11ty, while building locally ignores the &lt;code&gt;node_modules&lt;/code&gt; without any specific action on part of the developer&lt;/li&gt;
-&lt;li&gt;Fix: Add &lt;code&gt;node_modules&lt;/code&gt; to &lt;code&gt;.gitignore&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Sources of data.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;be sure to read &lt;a href=&quot;https://www.11ty.dev/docs/data/&quot;&gt;11ty Source of data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;I wanted access to site wide access to some variables. The best place for that is a json file in &lt;code&gt;_data&lt;/code&gt; directory&lt;/li&gt;
-&lt;li&gt;variable &lt;code&gt;showkeywords&lt;/code&gt; is used to show keywords in the left column. One can switch it off by making the value zero&lt;/li&gt;
-&lt;/ul&gt;
- 
-                <a href="/posts/11ty/" data-toggle="tooltip" title="by: @murthyug"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/bootstrap2/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                <h5 class="text-info"> Code block in a markdown file?</h5>
-              </a>
-              <p class="text-muted"> re class=&quot;alert alert-primary language-&quot;&gt;
-    
-    $ mkdir blog
-    $ cd blog
-    $ node init
-    $ npm install 11ty/@eleventy --save-dev
-    $ git init
-    $ echo # README &gt; README.md
-    
-    
-&lt;/pre&gt;
- &lt;pre &gt; 
-    &lt;code class=&quot;language-js hljs javascript&quot;&gt;
-    // This is a comment
-    // users.js
-    //
-    module.exports = {
-    getName: () =&gt; {
-        return &#39;Jimmy&#39;;
-    },
-    getLocation: () =&gt; {
-        return &#39;Madivalla&#39;;
-    },
-    dob: &#39;12-Jan-1920&#39;,
-    // added on 21/Jul
-    };
-
-    var x = 10;
-    x = x * 200;
-
-    co = require(&#39;users.js&#39;)
-    if ( condition ) {
-        return 1;
-    } else {
-
-        return 0;
-    }
-    &lt;/code&gt;
-&lt;/pre&gt;
-&lt;pre &gt; 
-    &lt;code class=&quot;language-html&quot;&gt;
-        &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;/index.html&quot;&gt;Home&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;/README&quot;&gt;About&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link text-disabled&quot; href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/code&gt;
-&lt;/pre&gt; 
-                <a href="/posts/bootstrap2/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-           
-           <div class="bg-light p-2">
-              <a href="/posts/bootstrap1/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                <h5 class="text-info"> bootstrap classes in a markdown file?</h5>
-              </a>
-              <p class="text-muted"> Image at the top (card-img-top):&lt;/p&gt;
-  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
-    &lt;img class=&quot;card-img-top&quot; src=&quot;/img/FP.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
-    &lt;div class=&quot;card-body&quot;&gt;
-      &lt;h4 class=&quot;card-title&quot;&gt;Jean Doe&lt;/h4&gt;
-      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
-      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;br&gt;
-  &lt;p&gt;Image at the bottom (card-img-bottom):&lt;/p&gt;
-  &lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
-    &lt;div class=&quot;card-body&quot;&gt;
-      &lt;h4 class=&quot;card-title&quot;&gt;Jane Doe&lt;/h4&gt;
-      &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. Jane Doe is an architect and engineer&lt;/p&gt;
-      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;img class=&quot;card-img-bottom&quot; src=&quot;/img/FY.png&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
- 
-                <a href="/posts/bootstrap1/" data-toggle="tooltip" title="by: ugurthy@lorem.com"> 
-                ...
-                </a>
-              </p>
-           </div>
-        
-      </div>
+</pre></code>
+<h6>3.2 Quick Check</h6>
+<p>To run Eleventy</p>
+<pre><code class="language- hljs">
+# build (actually there are no files to build)
+~/myproject $ npx @11ty/eleventy
+Processed 0 files in 0.03 seconds (V0.11.0)
+</pre></code>
+<h6>3.3 Working with templates</h6>
+<p>Template files (*.md in this case) reside in <code>~/myproject/posts</code> and layout files <code>*.njk</code> reside in <code>~/myproject/_includes</code></p>
+<p>The front matter data in the template is merged with the front matter date in the layout. The front matter data in template take priority over that in layouts - the closer to content, the higher priority the data.</p>
+<p>Note: Having a json file in the a directory with the name same as the directory allows one to share the same layout.</p>
+<pre><code class="language- hljs">
+{
+    "layout": "mylayout.njk",
+    "tags": ["posts"] 
+}
+</pre></code>
+<p>and makes avaialbe the data relating to files (templates) in <code>posts</code> as a collection referred by <code>collections.posts</code></p>
+<h6>4. Using data</h6>
+<p>The layout file uses the <code>collections.posts</code> and one can loop over the collections.</p>
+<p>Site wide data can be kept in <code>~myprojec/_data/mysite.js</code> using <code>module.exports</code></p>
+<p><a href="https://www.11ty.dev/">More info on 11ty</a></p>
+</p>
+        </div> 
+        <div class="card-footer text-small text-muted"></div>
+    </div>
+</div>
     </div>
   </div>
 
   <hr>
-
+  
   <footer>
   <div class="container">
     <div class="row">
@@ -547,7 +425,7 @@
         </ul>
         <div class="center">
         <div class="copyright text-muted text-center font-weight-lighter small"></div>
-        <p class="text-muted text-center font-weight-lighter small">Site last built on Wed Jul 22 2020 12:16:27 GMT+0530 (India Standard Time)</p>
+        <p class="text-muted text-center font-weight-lighter small">Site last built on Wed Jul 22 2020 13:29:47 GMT+0530 (India Standard Time)</p>
         </div>
       </div>
     </div>
